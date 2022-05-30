@@ -1,0 +1,67 @@
+@media screen and (max-width:600px) {
+    .vertical-bar {
+        padding: 1em;
+    }
+    .main-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        .column-one {
+            transform: translateX(30%);
+            height: 50vh;
+            width: 100%;
+            margin: 0 auto;
+            align-items: unset;
+            padding: 0em 0em;
+            p {
+                font-size: 0.8rem;
+            }
+            .name-text {
+                .overflow {
+                    height: 25px;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .column-two {
+            display: none;
+        }
+    }
+    .desktop-img {
+        img {
+            display: none;
+        }
+    }
+    .column-mobile {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        img {
+            height: 70%;
+        }
+    }
+    @keyframes animate {
+        0% {
+            margin-top: -30px;
+        }
+        5% {
+            margin-top: -20px;
+        }
+        50% {
+            margin-top: -20px;
+        }
+        55% {
+            margin-top: 0px;
+        }
+        99.99% {
+            margin-top: 0px;
+        }
+        100% {
+            margin-top: -30px;
+        }
+    }
+}

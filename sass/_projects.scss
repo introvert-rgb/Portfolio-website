@@ -1,0 +1,90 @@
+.main-frame {
+    max-width: 1340px;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    .project-heading {
+        width: 100%;
+        position: fixed;
+        background-color: $primary-color;
+        padding: 5em 4em 2em 4em;
+        z-index: 100;
+        p {
+            font-size: 2rem;
+        }
+        .heading {
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+    }
+    .card-outer {
+        padding-top: 15em;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card-container {
+            width: 240px;
+            height: 360px;
+            margin: 2em;
+            overflow: hidden;
+            border-radius: 1em;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+            background: url(../card-pictures/image-hero.jpg);
+            background-size: cover;
+            .card-details {
+                color: $primary-color;
+                display: flex;
+                transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+                border-radius: 1em;
+                transform: translateY(65%);
+                height: inherit;
+                padding: 1em;
+                flex-direction: column;
+                background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+                justify-content: flex-end;
+                .card-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    padding-bottom: 0.8em;
+                }
+                .card-detail {
+                    font-size: 0.9rem;
+                    padding-bottom: 1em;
+                }
+                .tech {
+                    display: flex;
+                    margin-bottom: 0.5em;
+                    img {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                .visit-btn {
+                    .site-btn {
+                        background: $primary-color;
+                        border: none;
+                        font-family: 'Roboto', sans-serif;
+                        padding: 0.8em 1.6em;
+                        border-radius: 0.5em;
+                        box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, 0.2);
+                        a {
+                            text-decoration: none;
+                            color: $activity-color;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.2);
+                .card-details {
+                    transform: translateY(0%);
+                }
+            }
+        }
+    }
+}

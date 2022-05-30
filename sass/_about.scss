@@ -1,0 +1,35 @@
+.about-frame {
+    max-width: 1340px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    .photo-frame {
+        height: 100vh;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        img {
+            overflow: hidden;
+            height: 80%;
+        }
+    }
+    .intro-frame {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 4.5rem;
+            margin-top: 1em;
+        }
+        .self-intro {
+            margin-top: 2.5em;
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            p {
+                line-height: 1.5;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
