@@ -56,6 +56,7 @@ body {
   padding: 2em;
   position: fixed;
   height: 100vh;
+  z-index:1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +283,9 @@ body {
 }
 @media screen and (max-width:766px){
   .vertical-bar {
+    z-index:1000;
     padding: 2em 0em;
+    width:60px;
   }
 }
 

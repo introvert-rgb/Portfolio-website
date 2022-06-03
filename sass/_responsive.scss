@@ -3,24 +3,28 @@
         padding: 1em;
     }
     .main-container {
-        width: 100%;
+        height: 100vh;
         flex-direction: column-reverse;
         .column-one {
-            transform: translateX(30%);
-            height: 50vh;
-            width: 100%;
+            padding: 0;
+            align-items: flex-start;
+            width: 75%;
             margin: 0 auto;
-            align-items: unset;
-            padding: 0em 0em;
-            p {
+            justify-content: flex-start;
+            .hey {
                 font-size: 0.8rem;
             }
             .name-text {
+                .main-text {
+                    display: flex;
+                    flex-direction: column;
+                }
                 .overflow {
-                    height: 25px;
+                    overflow: unset;
+                    height: unset;
                 }
                 p {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -34,7 +38,7 @@
         }
     }
     .column-mobile {
-        height: 60vh;
+        height: 70vh;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -62,6 +66,96 @@
         }
         100% {
             margin-top: -30px;
+        }
+    }
+    .animated {
+        animation: none
+    }
+    .main-frame {
+        .project-heading {
+            width: 100%;
+            position: fixed;
+            background-color: $primary-color;
+            padding: 1em 4em 2em 4em;
+            z-index: 100;
+            p {
+                font-size: 1rem;
+            }
+            .heading {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+        }
+        .card-outer {
+            padding-top: 6em;
+        }
+    }
+    .about-frame {
+        flex-direction: column;
+        width: 80%;
+        margin-right: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        margin-left: auto;
+        .photo-frame {
+            width: unset;
+            display: none;
+        }
+        img {
+            display: none;
+        }
+        .intro-frame {
+            h1 {
+                font-size: 2rem;
+            }
+            .self-intro {
+                width: 100%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width:601px) and (max-width:1023px) {
+    .animated {
+        animation: none
+    }
+    .main-container {
+        .column-one {
+            .name-text {
+                p {
+                    font-size: 2.5rem;
+                }
+                .overflow {
+                    overflow: unset;
+                    height: unset;
+                }
+            }
+        }
+    }
+    .about-frame {
+        height: unset;
+        flex-direction: column;
+        width: 80%;
+        margin-right: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+        margin-left: auto;
+        .photo-frame {
+            width: unset;
+            display: none;
+        }
+        img {
+            display: none;
+        }
+        .intro-frame {
+            h1 {
+                font-size: 2rem;
+            }
+            .self-intro {
+                width: 100%;
+                font-size: 0.8rem;
+            }
         }
     }
 }

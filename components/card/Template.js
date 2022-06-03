@@ -117,6 +117,24 @@ export default {
 .card-container:hover .card-details {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}@media screen and (max-width:766px){
+   .card-container {
+  width: 200px;
+  height: 360px;
+  margin: 2em;
+  overflow: hidden;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  
+  background-size: cover;
+}
 }
         </style>`
     }
