@@ -8,7 +8,7 @@ export default {
     html() {
         return `
    <div class="footer">
-        &#169; Anup Singh 2023
+        &#169; Anup Singh 2024
     </div>
         `;
     },
